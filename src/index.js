@@ -1,7 +1,7 @@
 const express = require('express');
 const { createServer } = require('http');
 const realTimeServer = require('./realTimeServer');
-const path = required('path');
+const path = require('path');
 
 const app = express();
 const httpServer = createServer(app);
