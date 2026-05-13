@@ -1,29 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/register.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/register.css" />
     <title>Registrate</title>
-</head>
-<body>
-        <header>
+  </head>
+  <body>
+    <header class="chat-header">
+    <div class="header-content">
+
+        <div class="logo-container">
+        <img src="/img/espe-logo.png" alt="ESPE Logo" />
+        </div>
+
+        <div class="title-container">
         <h1>ESPEChat</h1>
+        <span>Mensajería en tiempo real</span>
+        </div>
+
+    </div>
     </header>
     <main>
-        <form action="#" method="post" class="card">
-            <div class="input-group">
-                <label for="username">Ingresa tu nombre de usuario</label>
-                <input type="text" id="username"/>
-            </div>
-            <div class="button-container">
-                <button type="submit" class="btn primary" id="login">
-                    Entrar al chat
-                </button>
-            </div>
-        </form>
+      <form action="#" method="post" class="card" id="form">
+        <div class="input-group">
+          <label for="username">Ingresa tu nombre de usuario</label>
+          <input type="text" id="username" />
+        </div>
+        <div class="button-container">
+          <button type="submit" class="btn primary" id="login">
+            Entrar al Chat
+          </button>
+        </div>
+      </form>
     </main>
     <script src="js/register.js"></script>
-</body>
+  </body>
 </html>

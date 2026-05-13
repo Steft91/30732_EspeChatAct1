@@ -40,3 +40,26 @@ main form .button-container button:hover {
   background-color: #ffd700; /* Amarillo institucional al hover */
   color: #000000; /* Texto negro para contraste */
 }
+
+main form {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+main form .input-group input {
+  margin-top: 6px;
+  transition: 0.3s ease;
+}
+
+main form .input-group input:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+}
+
+main form .button-container button {
+  width: 100%;
+}
+
+main form:hover {
+  transform: translateY(-2px);
+  transition: 0.3s ease;
+}

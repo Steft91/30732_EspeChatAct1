@@ -1,19 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/chat.css" />
     <title>ESPEChat</title>
-</head>
-<body>
-    <header>
-        <h1>ESPEChat</h1>
+  </head>
+  <body>
+    <header class="chat-header">
+      <div class="header-content">
+
+        <div class="logo-container">
+          <img src="/img/espe-logo.png" alt="ESPE Logo" />
+        </div>
+
+        <div class="title-container">
+          <h1>ESPEChat</h1>
+          <span>Mensajería en tiempo real</span>
+        </div>
+
+      </div>
     </header>
 
-    <p>Bienvenidos a ESPEChat, la aplicación de chat en tiempo real.</p>
+    <main>
+      <div id="all-messages"></div>
+
+      <div id="typing-status"></div>
+      <div class="send-message">
+        <input type="text" id="message" placeholder="Escribe un mensaje..." />
+        <button id="send-message" class="btn secondary">Enviar</button>
+      </div>
+    </main>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/script.js"></script>
-    
-</body>
+  </body>
 </html>
